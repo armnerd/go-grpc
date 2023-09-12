@@ -1,0 +1,27 @@
+server:
+  host: 127.0.0.1
+  portgrpc: 50051
+  porthttp: 9551
+  env: dev
+
+data:
+  mysqluser:
+    host: 127.0.0.1
+    port: 3306
+    database: user
+    user: root
+    pass: 123456
+    charset: utf8mb4
+
+  mysqlblog:
+    host: localhost
+    port: 3306
+    database: blog
+    user: root
+    pass: 123456
+    charset: utf8mb4
+
+  redisbase:
+    host: 127.0.0.1
+    port: 6379
+    pass: 

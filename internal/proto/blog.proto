@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option go_package = "go-grpc/internal/proto";
+option java_multiple_files = true;
+option java_package = "fans.blogProto";
+option java_outer_classname = "blogProto";
+
+package blog;
+
+service Blog {
+  rpc GetArticleInfo (ArticleInfoRequest) returns (ArticleInfoReply) {}
+}
+
+message ArticleInfoRequest {
+  int32 id = 1;
+}
+
+message ArticleInfoReply {
+  int32 id = 1;
+  string title = 2;
+  string intro = 3;
+  string cover = 4;
+  string author = 5;
+}
